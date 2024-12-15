@@ -1,4 +1,4 @@
 .idea/
-python/
+package/
 *.zip
 .DS_Store

@@ -1,0 +1,26 @@
+---
+name: aws-layer
+on:
+  push:
+    tags:
+      - 'v.*'
+  release:
+    types: [ published ]
+
+env:
+  CI: true
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@v5
+    - run: make package
+    - uses: actions/upload-artifact@v4
+      with:
+        name: python-nltk-layer-${{ github.ref_name }}.zip
+        path: layer.zip

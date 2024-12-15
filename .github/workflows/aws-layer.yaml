@@ -11,8 +11,8 @@ env:
   CI: true
 
 jobs:
-  deploy:
-    runs-on: self-hosted
+  package:
+    runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
     - uses: actions/checkout@v4

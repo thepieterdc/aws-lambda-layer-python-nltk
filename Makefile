@@ -7,4 +7,3 @@ package: download
 prepare:
 	mkdir -p package/python/nltk_data
 	python3 -m pip install -r requirements.txt
-	python3 -m pip install -r requirements.txt -t package/python

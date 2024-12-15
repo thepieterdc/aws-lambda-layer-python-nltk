@@ -1,10 +1,10 @@
 download: prepare
-	mkdir -p python/nltk_data
 	python3 download.py
 
 package: download
-	zip -r layer.zip .
+	(cd package/; zip -r ../layer.zip .)
 
 prepare:
+	mkdir -p package/python/nltk_data
 	python3 -m pip install -r requirements.txt
-	python3 -m pip install -r requirements.txt -t python
+	python3 -m pip install -r requirements.txt -t package/python

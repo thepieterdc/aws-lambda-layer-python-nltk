@@ -10,4 +10,4 @@ DATASETS = {
 }
 
 for dataset in DATASETS:
-    nltk.download(dataset, download_dir='python/nltk_data')
+    nltk.download(dataset, download_dir='package/python/nltk_data')

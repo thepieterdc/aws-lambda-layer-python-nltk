@@ -1,12 +1,8 @@
 import nltk
 
 DATASETS = {
-    "averaged_perceptron_tagger",
-    "brown",
-    "conll2000",
-    "movie_reviews",
     "punkt",
-    "wordnet",
+    "stopwords",
 }
 
 for dataset in DATASETS:

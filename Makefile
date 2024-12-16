@@ -5,5 +5,5 @@ package: download
 	(cd package/; zip -r ../layer.zip .)
 
 prepare:
-	mkdir -p package/python/nltk_data
+	mkdir -p package/nltk_data
 	python3 -m pip install -r requirements.txt

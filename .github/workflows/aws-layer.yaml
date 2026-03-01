@@ -20,7 +20,7 @@ jobs:
         fetch-depth: 0
     - uses: actions/setup-python@v5
     - run: make package
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         name: python-nltk-layer-${{ github.ref_name }}.zip
         path: layer.zip

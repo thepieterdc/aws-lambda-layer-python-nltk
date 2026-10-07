@@ -1,7 +1,7 @@
 import nltk
 
 DATASETS = {
-    "punkt",
+    "punkt_tab",
     "stopwords",
 }
 
